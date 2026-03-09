@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .site-header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; max-width: 1400px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+        .site-logo img { height: 36px; }
+        .site-logo span { font-size: 1rem; font-weight: 700; color: #045A7D; }
+        .site-nav { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
+        .site-nav a { color: #333; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 6px 8px; display: block; }
+        .site-nav a:hover, .site-nav a.active { color: #045A7D; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px 10px; line-height: 1; }
+        @media (max-width: 900px) {
+            .menu-toggle { display: block; }
+            .site-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            .site-nav.open { display: flex; }
+            .site-nav li { border-bottom: 1px solid #eee; }
+            .site-nav a { padding: 12px 15px; font-size: 0.9rem; }
+            .site-header .container { flex-wrap: wrap; }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Get Involved – Forge AHEAD Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    
+<body>
+    <header class="site-header" style="position: relative;">
+        <div class="container">
+            <a href="https://www.forgeaheadcenter.com" class="site-logo" target="_blank">
+                <img src="images/forge-logo.svg" alt="Forge AHEAD Center">
+                <span>Forge AHEAD</span>
+            </a>
+            <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+            <ul class="site-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="engagement-core.html">Engagement</a></li>
+                <li><a href="cab.html">Advisory Board</a></li>
+                <li><a href="coalition.html">Coalition</a></li>
+                <li><a href="micro-grants.html">Grants</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--
+    <!-- Header -->
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Contact & Get Involved</h1>
+            <p>Connect with the Forge AHEAD Center and join our mission to improve community health</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Community</a> <span>›</span> Contact & Get Involved
+        </div>
+    </section>
+
+    <!-- Ways to Get Involved -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ways to Get Involved</h2>
+                <p>There are many ways to join our mission to improve health equity in the Deep South</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">🤝</div>
+                    <h3>Partner With Us</h3>
+                    <p>Join our Community Coalition and collaborate with academic and community partners across three states.</p>
+                    <a href="coalition.html" class="btn btn-outline">Learn More →</a>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">💰</div>
+                    <h3>Apply for Funding</h3>
+                    <p>Our Micro-Grant Program supports community organizations working to improve local health.</p>
+                    <a href="micro-grants.html" class="btn btn-outline">Learn More →</a>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 15px;">📢</div>
+                    <h3>Share Your Voice</h3>
+                    <p>Join our Community Advisory Board and help guide research priorities for your community.</p>
+                    <a href="cab.html" class="btn btn-outline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="grid-2" style="gap: 50px;">
+                <div>
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions about community engagement, partnership opportunities, or our programs? We'd love to hear from you.</p>
+                    
+                    <form class="card" style="margin-top: 30px;">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization (if applicable)</label>
+                            <input type="text" id="organization" name="organization" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I'm interested in...</label>
+                            <select id="interest" name="interest" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="partnership">Partnering with Forge AHEAD</option>
+                                <option value="coalition">Joining the Community Coalition</option>
+                                <option value="cab">Community Advisory Board</option>
+                                <option value="microgrant">Micro-Grant Program</option>
+                                <option value="resources">Health Education Resources</option>
+                                <option value="research">Research Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" required placeholder="Tell us how we can help..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h2>Contact Information</h2>
+                    <p>Reach out to our Community Engagement team directly</p>
+                    
+                    <div class="card" style="margin-top: 20px;">
+                        <h4>Community Engagement Core</h4>
+                        <p style="margin-bottom: 20px;">For questions about community partnerships, programs, and engagement opportunities.</p>
+                        
+                        <div class="feature-box" style="background: var(--off-white);">
+                            <div class="feature-box-icon">📧</div>
+                            <div class="feature-box-content">
+                                <h4>Email</h4>
+                                <p style="margin-bottom: 0;"><a href="mailto:forgeahead@uabmc.edu">forgeahead@uabmc.edu</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-box" style="background: var(--off-white);">
+                            <div class="feature-box-icon">📞</div>
+                            <div class="feature-box-content">
+                                <h4>Phone</h4>
+                                <p style="margin-bottom: 0;">(205) 975-XXXX</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-top: 20px;">
+                        <h4>Main Office</h4>
+                        <p style="margin-bottom: 0;">
+                            <strong>Forge AHEAD Center</strong><br>
+                            University of Alabama at Birmingham<br>
+                            1720 2nd Avenue South<br>
+                            Birmingham, AL 35294
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Offices -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Regional Presence</h2>
+                <p>Serving communities across Alabama, Mississippi, and Louisiana</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <span class="profile-state al" style="margin-bottom: 15px; display: inline-block;">Alabama</span>
+                    <h3>UAB</h3>
+                    <p>1720 2nd Avenue South<br>Birmingham, AL 35294</p>
+                    <p><strong>Lead Institution</strong><br>Core research and administrative functions</p>
+                </div>
+                <div class="card">
+                    <span class="profile-state ms" style="margin-bottom: 15px; display: inline-block;">Mississippi</span>
+                    <h3>University of Mississippi Medical Center</h3>
+                    <p>2500 N. State Street<br>Jackson, MS 39216</p>
+                    <p><strong>Site Partner</strong><br>Research and community engagement</p>
+                </div>
+                <div class="card">
+                    <span class="profile-state la" style="margin-bottom: 15px; display: inline-block;">Louisiana</span>
+                    <h3>Pennington Biomedical Research Center</h3>
+                    <p>6400 Perkins Road<br>Baton Rouge, LA 70808</p>
+                    <p><strong>Site Partner</strong><br>Research and community engagement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 50px;">
+                <div>
+                    <h2>Stay Connected</h2>
+                    <p>Subscribe to our newsletter to receive updates on community engagement opportunities, research findings, and upcoming events.</p>
+                    <p>We respect your privacy and will never share your information.</p>
+                </div>
+                <div class="card">
+                    <h3>Newsletter Signup</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="newsletter-email">Email Address *</label>
+                            <input type="email" id="newsletter-email" name="newsletter-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Follow Us</h2>
+                <p>Stay updated on our latest news and community engagement activities</p>
+            </div>
+            <div class="grid-4" style="max-width: 800px; margin: 0 auto;">
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 10px;">📘</div>
+                    <h4>Facebook</h4>
+                    <a href="https://www.facebook.com/ForgeAHEADCenter" target="_blank" class="btn btn-outline">Follow</a>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 10px;">🐦</div>
+                    <h4>Twitter/X</h4>
+                    <a href="https://twitter.com/ForgeAHEAD" target="_blank" class="btn btn-outline">Follow</a>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 10px;">📸</div>
+                    <h4>Instagram</h4>
+                    <a href="https://www.instagram.com/forgeaheadcenter/" target="_blank" class="btn btn-outline">Follow</a>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 10px;">📺</div>
+                    <h4>YouTube</h4>
+                    <a href="https://www.youtube.com/@ForgeAHEADCenter" target="_blank" class="btn btn-outline">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Forge AHEAD Center</h4>
+                    <p>A regional health research center focused on improving health outcomes and expanding access to effective care across the Deep South.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Community Home</a></li>
+                        <li><a href="engagement-core.html">Engagement Core</a></li>
+                        <li><a href="cab.html">Advisory Board</a></li>
+                        <li><a href="coalition.html">Coalition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="micro-grants.html">Micro-Grants</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Main Site</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.forgeaheadcenter.com">Home</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/about/">About</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/people-partners/">People & Partners</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/research/">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Forge AHEAD Center. All rights reserved. Working to eliminate health disparities in the Deep South.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

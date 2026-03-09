@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .site-header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; max-width: 1400px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+        .site-logo img { height: 36px; }
+        .site-logo span { font-size: 1rem; font-weight: 700; color: #045A7D; }
+        .site-nav { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
+        .site-nav a { color: #333; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 6px 8px; display: block; }
+        .site-nav a:hover, .site-nav a.active { color: #045A7D; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px 10px; line-height: 1; }
+        @media (max-width: 900px) {
+            .menu-toggle { display: block; }
+            .site-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            .site-nav.open { display: flex; }
+            .site-nav li { border-bottom: 1px solid #eee; }
+            .site-nav a { padding: 12px 15px; font-size: 0.9rem; }
+            .site-header .container { flex-wrap: wrap; }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Coalition – Forge AHEAD Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    
+<body>
+    <header class="site-header" style="position: relative;">
+        <div class="container">
+            <a href="https://www.forgeaheadcenter.com" class="site-logo" target="_blank">
+                <img src="images/forge-logo.svg" alt="Forge AHEAD Center">
+                <span>Forge AHEAD</span>
+            </a>
+            <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+            <ul class="site-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="engagement-core.html">Engagement</a></li>
+                <li><a href="cab.html">Advisory Board</a></li>
+                <li><a href="coalition.html">Coalition</a></li>
+                <li><a href="micro-grants.html">Grants</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--
+    <!-- Header -->
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Community Coalition</h1>
+            <p>Bringing together diverse partners to address regional health disparities</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Community</a> <span>›</span> Community Coalition
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 50px;">
+                <div>
+                    <h2>Uniting for Health Equity</h2>
+                    <p>The Community Coalition brings together non-academic and academic partners to explore and develop innovative partnerships that address regional health disparities and further the translational research goals of the Forge AHEAD Center.</p>
+                    <p>By connecting organizations across sectors and states, we create a powerful network dedicated to improving cardiometabolic health outcomes throughout the Deep South.</p>
+                </div>
+                <div class="quote-box">
+                    <p>"Working together, we can achieve more than any single organization could alone. The Community Coalition amplifies our collective impact on health equity."</p>
+                    <cite>— Forge AHEAD Community Engagement Team</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Types -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Who Can Join</h2>
+                <p>Our coalition includes diverse organizations committed to community health</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Community-Based Organizations</h3>
+                    <p>Nonprofits, advocacy groups, and community organizations working on health and social services at the local level.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⛪</div>
+                    <h3>Faith-Based Institutions</h3>
+                    <p>Churches, religious organizations, and faith-based health ministries that serve as community anchors.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏥</div>
+                    <h3>Public Health Agencies</h3>
+                    <p>Local and county health departments, public health districts, and community health centers.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏛️</div>
+                    <h3>Government Agencies</h3>
+                    <p>Local and state government offices, elected officials' community programs, and public service organizations.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏘️</div>
+                    <h3>Tribal Governments</h3>
+                    <p>Tribal governments and public health offices working to address health disparities in Native communities.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏪</div>
+                    <h3>Small Businesses</h3>
+                    <p>Local businesses invested in community health, wellness enterprises, and health-conscious employers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHAPES Program -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>SHAPES Program</h2>
+                <p>StakeHolder Advisory PanEls for Focused Collaboration</p>
+            </div>
+            <div class="card" style="max-width: 900px; margin: 0 auto;">
+                <div class="grid-2" style="align-items: center;">
+                    <div>
+                        <h3>What is SHAPES?</h3>
+                        <p>In addition to potential interactions during regularly scheduled Community Coalition meetings, community stakeholders or investigators may partake in StakeHolder Advisory PanEls (SHAPES).</p>
+                        <p>The purpose of SHAPES is to encourage focused, in-depth, bidirectional discourse regarding potential projects and partnerships that are identified for follow-up during regularly scheduled Coalition meetings.</p>
+                    </div>
+                    <div class="feature-box" style="background: var(--deep-south-blue); color: white;">
+                        <div class="feature-box-icon" style="background: rgba(255,255,255,0.2);">💡</div>
+                        <div class="feature-box-content">
+                            <h4 style="color: white;">Key Benefits</h4>
+                            <ul class="feature-list" style="color: white;">
+                                <li style="border-color: rgba(255,255,255,0.2);">Deep dive into specific topics</li>
+                                <li style="border-color: rgba(255,255,255,0.2);">Direct input on research design</li>
+                                <li style="border-color: rgba(255,255,255,0.2);">Partnership development</li>
+                                <li style="border-color: rgba(255,255,255,0.2);">Actionable outcomes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="grid-2" style="gap: 50px;">
+                <div>
+                    <h2>Membership Details</h2>
+                    <p>Coalition members represent organizations and potential organizational resources, working together to advance health equity across the Deep South.</p>
+                    
+                    <h4 style="margin-top: 25px;">Meeting Schedule</h4>
+                    <ul class="feature-list">
+                        <li>Community Coalition meetings are scheduled on an ad hoc basis</li>
+                        <li>SHAPES meetings are arranged as specific needs arise</li>
+                        <li>Virtual attendance options available</li>
+                    </ul>
+
+                    <h4 style="margin-top: 25px;">Member Benefits</h4>
+                    <ul class="feature-list">
+                        <li>Access to Forge AHEAD research findings</li>
+                        <li>Networking opportunities with partner organizations</li>
+                        <li>Potential for collaborative research programs</li>
+                        <li>Input on center priorities and initiatives</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="card">
+                        <h3>Member Expectations</h3>
+                        <p>Coalition members are expected to:</p>
+                        <ul class="feature-list">
+                            <li>Attend scheduled meetings when possible</li>
+                            <li>Share relevant organizational resources and expertise</li>
+                            <li>Participate in SHAPES meetings when invited</li>
+                            <li>Help identify community needs and priorities</li>
+                            <li>Support dissemination of research findings</li>
+                            <li>Advocate for health equity in their communities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Join -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Join the Coalition</h2>
+                <p>Become part of our collaborative network</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">1️⃣</div>
+                    <h3>Reach Out</h3>
+                    <p>Contact our Community Engagement team to express interest in joining the Coalition.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">2️⃣</div>
+                    <h3>Learn About Us</h3>
+                    <p>We'll share information about the Coalition, current initiatives, and membership expectations.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">3️⃣</div>
+                    <h3>Get Connected</h3>
+                    <p>Once enrolled, you'll receive invitations to Coalition meetings and SHAPES sessions.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="contact.html" class="btn btn-primary">Express Interest</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Pages -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Programs</h2>
+                <p>Explore more ways to engage with Forge AHEAD</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Community Advisory Board</h3>
+                    <p>Learn about our CAB, which provides strategic guidance to the center.</p>
+                    <a href="cab.html" class="btn btn-outline">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>Micro-Grant Program</h3>
+                    <p>Funding opportunities for community organizations working to improve local health.</p>
+                    <a href="micro-grants.html" class="btn btn-outline">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>Community Resources</h3>
+                    <p>Access health education materials and resources for your community.</p>
+                    <a href="resources.html" class="btn btn-outline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Forge AHEAD Center</h4>
+                    <p>A regional health research center focused on improving health outcomes and expanding access to effective care across the Deep South.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Community Home</a></li>
+                        <li><a href="engagement-core.html">Engagement Core</a></li>
+                        <li><a href="cab.html">Advisory Board</a></li>
+                        <li><a href="coalition.html">Coalition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="micro-grants.html">Micro-Grants</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Main Site</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.forgeaheadcenter.com">Home</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/about/">About</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/people-partners/">People & Partners</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/research/">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Forge AHEAD Center. All rights reserved. Working to eliminate health disparities in the Deep South.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

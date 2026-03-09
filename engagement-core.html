@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .site-header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; max-width: 1400px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+        .site-logo img { height: 36px; }
+        .site-logo span { font-size: 1rem; font-weight: 700; color: #045A7D; }
+        .site-nav { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
+        .site-nav a { color: #333; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 6px 8px; display: block; }
+        .site-nav a:hover, .site-nav a.active { color: #045A7D; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px 10px; line-height: 1; }
+        @media (max-width: 900px) {
+            .menu-toggle { display: block; }
+            .site-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            .site-nav.open { display: flex; }
+            .site-nav li { border-bottom: 1px solid #eee; }
+            .site-nav a { padding: 12px 15px; font-size: 0.9rem; }
+            .site-header .container { flex-wrap: wrap; }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Engagement Core – Forge AHEAD Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    
+<body>
+    <header class="site-header" style="position: relative;">
+        <div class="container">
+            <a href="https://www.forgeaheadcenter.com" class="site-logo" target="_blank">
+                <img src="images/forge-logo.svg" alt="Forge AHEAD Center">
+                <span>Forge AHEAD</span>
+            </a>
+            <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+            <ul class="site-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="engagement-core.html">Engagement</a></li>
+                <li><a href="cab.html">Advisory Board</a></li>
+                <li><a href="coalition.html">Coalition</a></li>
+                <li><a href="micro-grants.html">Grants</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--
+    <!-- Header -->
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Community Engagement Core</h1>
+            <p>Promoting health equity through authentic partnerships across the Deep South</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Community</a> <span>›</span> Community Engagement Core
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 50px;">
+                <div>
+                    <h2>Engaging Communities for Health Equity</h2>
+                    <p>The Community Engagement Core of the Forge AHEAD Center seeks to promote health equity and reduce the burden of cardiometabolic diseases across the Deep South by developing engaged, active, and sustained partnerships with diverse regional stakeholders.</p>
+                    <p>We believe that meaningful change happens when communities are true partners in research—not just participants, but collaborators who help shape priorities, design programs, and share findings in ways that resonate with local culture and needs.</p>
+                </div>
+                <div class="quote-box">
+                    <p>"We believe that the best solutions come from within the communities themselves."</p>
+                    <cite>— Caroline Compretta, PhD, Community Engagement Core Lead</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Goal -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Goal</h2>
+                <p>Facilitating bi-directional communication and authentic partnerships</p>
+            </div>
+            <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 0;">Facilitate bi-directional communication and authentic partnerships between Center members and diverse regional stakeholders and disseminate relevant and actionable strategies to address the persistent chronic disease burden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specific Aims -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Specific Aims</h2>
+                <p>Our core objectives for community engagement across the region</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Aim 1</h3>
+                    <h4>Expand Partnerships</h4>
+                    <p>Expand and maintain partnerships with diverse non-academic partners including community organizations, faith-based institutions, healthcare providers, and government agencies across Alabama, Mississippi, and Louisiana.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>Aim 2</h3>
+                    <h4>Facilitate Co-Learning</h4>
+                    <p>Facilitate co-learning and bi-directional communication between the Center's Research and Pilot Project investigators and community stakeholders, ensuring research addresses real community needs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📢</div>
+                    <h3>Aim 3</h3>
+                    <h4>Disseminate Findings</h4>
+                    <p>Develop and disseminate findings from the Center to diverse audiences including community residents, policymakers, educators, public health practitioners, and academic researchers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>How We Work</h2>
+                <p>Our approach to authentic community partnership</p>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <h3>Bi-Directional Communication</h3>
+                    <p>We believe research should flow in both directions. Our community partners help identify priorities and inform research design, while we share findings in accessible, culturally appropriate ways.</p>
+                    <ul class="feature-list">
+                        <li>Regular community listening sessions</li>
+                        <li>Research priority setting with community input</li>
+                        <li>Plain-language research summaries</li>
+                        <li>Community-friendly educational materials</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Sustained Partnerships</h3>
+                    <p>We move beyond one-time interactions to build lasting relationships that create real impact. Our partners are involved at every stage of research, from conception to dissemination.</p>
+                    <ul class="feature-list">
+                        <li>Long-term collaborative relationships</li>
+                        <li>Shared decision-making processes</li>
+                        <li>Joint planning and implementation</li>
+                        <li>Mutual capacity building</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Regional Reach</h2>
+                <p>Partnering across the Deep South</p>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">States</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">CAB Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Partner Organizations</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Community Programs Supported</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Pages -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Programs</h2>
+                <p>Explore more ways we engage with communities</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Community Advisory Board</h3>
+                    <p>Meet the dedicated community leaders who guide our work and ensure research addresses real needs.</p>
+                    <a href="cab.html" class="btn btn-outline">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>Community Coalition</h3>
+                    <p>Join our coalition of academic and non-academic partners working together on health equity.</p>
+                    <a href="coalition.html" class="btn btn-outline">Learn More →</a>
+                </div>
+                <div class="card">
+                    <h3>Micro-Grant Program</h3>
+                    <p>Funding opportunities for community organizations working to improve local health.</p>
+                    <a href="micro-grants.html" class="btn btn-outline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Forge AHEAD Center</h4>
+                    <p>A regional health research center focused on improving health outcomes and expanding access to effective care across the Deep South.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Community Home</a></li>
+                        <li><a href="engagement-core.html">Engagement Core</a></li>
+                        <li><a href="cab.html">Advisory Board</a></li>
+                        <li><a href="coalition.html">Coalition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="micro-grants.html">Micro-Grants</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Main Site</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.forgeaheadcenter.com">Home</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/about/">About</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/people-partners/">People & Partners</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/research/">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Forge AHEAD Center. All rights reserved. Working to eliminate health disparities in the Deep South.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

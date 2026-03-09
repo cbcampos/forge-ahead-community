@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .site-header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; max-width: 1400px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+        .site-logo img { height: 36px; }
+        .site-logo span { font-size: 1rem; font-weight: 700; color: #045A7D; }
+        .site-nav { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
+        .site-nav a { color: #333; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 6px 8px; display: block; }
+        .site-nav a:hover, .site-nav a.active { color: #045A7D; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px 10px; line-height: 1; }
+        @media (max-width: 900px) {
+            .menu-toggle { display: block; }
+            .site-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            .site-nav.open { display: flex; }
+            .site-nav li { border-bottom: 1px solid #eee; }
+            .site-nav a { padding: 12px 15px; font-size: 0.9rem; }
+            .site-header .container { flex-wrap: wrap; }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Advisory Board – Forge AHEAD Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    
+<body>
+    <header class="site-header" style="position: relative;">
+        <div class="container">
+            <a href="https://www.forgeaheadcenter.com" class="site-logo" target="_blank">
+                <img src="images/forge-logo.svg" alt="Forge AHEAD Center">
+                <span>Forge AHEAD</span>
+            </a>
+            <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+            <ul class="site-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="engagement-core.html">Engagement</a></li>
+                <li><a href="cab.html">Advisory Board</a></li>
+                <li><a href="coalition.html">Coalition</a></li>
+                <li><a href="micro-grants.html">Grants</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--
+    <!-- Header -->
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Community Advisory Board</h1>
+            <p>Community voices guiding our mission to improve health equity across the Deep South</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Community</a> › Community Advisory Board
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="intro-text">
+                <p>The Forge AHEAD Center established a Community Advisory Board (CAB) with representatives from each state in our regional partnership (Alabama, Mississippi, and Louisiana). The CAB advises the Community Engagement Core and Center leaders, research and pilot project investigators, and engages in long-term strategic planning to achieve health equity.</p>
+            </div>
+            <div class="quote-box">
+                <p>"Our communities have the knowledge, passion, and solutions to tackle health challenges—we just need the resources to make it happen."</p>
+                <cite>— CAB Member</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsibilities -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Role & Responsibilities</h2>
+                <p>How our CAB members serve the community</p>
+            </div>
+            <div class="responsibility-grid">
+                <div class="responsibility-item">
+                    <div class="resp-icon">📋</div>
+                    <div class="resp-text">
+                        <h4>Advise Investigators</h4>
+                        <p>Provide feedback to investigators with the goal of continuous process improvement through project proposal reviews.</p>
+                    </div>
+                </div>
+                <div class="responsibility-item">
+                    <div class="resp-icon">🗣️</div>
+                    <div class="resp-text">
+                        <h4>Be the Voice</h4>
+                        <p>Be the "voice" of community priorities represented by the regional partnership.</p>
+                    </div>
+                </div>
+                <div class="responsibility-item">
+                    <div class="resp-icon">🛡️</div>
+                    <div class="resp-text">
+                        <h4>Advocate</h4>
+                        <p>Advocate for study participants, community partners, and other stakeholders.</p>
+                    </div>
+                </div>
+                <div class="responsibility-item">
+                    <div class="resp-icon">🔍</div>
+                    <div class="resp-text">
+                        <h4>Identify Assets & Needs</h4>
+                        <p>Identify assets, needs, strengths, and capacity of community partnerships.</p>
+                    </div>
+                </div>
+                <div class="responsibility-item">
+                    <div class="resp-icon">🤝</div>
+                    <div class="resp-text">
+                        <h4>Share Ownership</h4>
+                        <p>Share ownership and accountability with the Forge AHEAD Center and our program partners.</p>
+                    </div>
+                </div>
+                <div class="responsibility-item">
+                    <div class="resp-icon">📈</div>
+                    <div class="resp-text">
+                        <h4>Strategic Planning</h4>
+                        <p>Engage in long-term strategic planning to achieve health equity across the Deep South.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chair -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Board Chair</h2>
+                <p>Leading our community advisory efforts</p>
+            </div>
+            <div class="chair-card">
+                <div class="chair-img">LH</div>
+                <div class="chair-info">
+                    <h3>Lauren Hebert-Henderson</h3>
+                    <span class="role">Chair, Community Advisory Board</span>
+                    <span class="affiliation">Director of Community Relations, Baton Rouge General Health System</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members by State -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-title">
+                <h2>Board Members</h2>
+                <p>Community leaders from across our three-state partnership</p>
+            </div>
+            
+            <h3 style="color: #1565c0; margin-bottom: 1.5rem;">Alabama Representatives</h3>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="profile-img">BF</div>
+                    <div class="profile-name">Bernice Frazier</div>
+                    <span class="profile-role">CAB Member</span>
+                    <p class="profile-org">Macon Co. Health Authority</p>
+                    <span class="state-badge state-AL">Alabama</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">CW</div>
+                    <div class="profile-name">Cynthia B. Wilson</div>
+                    <span class="profile-role">CAB Member</span>
+                    <p class="profile-org">Tuskegee University</p>
+                    <span class="state-badge state-AL">Alabama</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">CF</div>
+                    <div class="profile-name">Cheryl Ferguson</div>
+                    <span class="profile-role">CAB Member</span>
+                    <p class="profile-org">Tuskegee University</p>
+                    <span class="state-badge state-AL">Alabama</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">CW</div>
+                    <div class="profile-name">Chris Williams</div>
+                    <span class="profile-role">CAB Member</span>
+                    <span class="state-badge state-AL">Alabama</span>
+                </div>
+            </div>
+
+            <h3 style="color: #e65100; margin: 2.5rem 0 1.5rem;">Mississippi Representatives</h3>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="profile-img">BF</div>
+                    <div class="profile-name">Brooke Floyd</div>
+                    <span class="profile-role">CAB Member</span>
+                    <p class="profile-org">JXN People's Assembly</p>
+                    <span class="state-badge state-MS">Mississippi</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">GD</div>
+                    <div class="profile-name">George Dixon</div>
+                    <span class="profile-role">CAB Member</span>
+                    <span class="state-badge state-MS">Mississippi</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">JB</div>
+                    <div class="profile-name">Jill Buckley</div>
+                    <span class="profile-role">CAB Member</span>
+                    <span class="state-badge state-MS">Mississippi</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">CM</div>
+                    <div class="profile-name">Cassandra Mobley</div>
+                    <span class="profile-role">CAB Member</span>
+                    <span class="state-badge state-MS">Mississippi</span>
+                </div>
+            </div>
+
+            <h3 style="color: #c2185b; margin: 2.5rem 0 1.5rem;">Louisiana Representatives</h3>
+            <div class="grid grid-4">
+                <div class="card">
+                    <div class="profile-img">DO</div>
+                    <div class="profile-name">D'Andréra Bradford Odom</div>
+                    <span class="profile-role">CAB Member</span>
+                    <span class="state-badge state-LA">Louisiana</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">ER</div>
+                    <div class="profile-name">Evon Roquemore</div>
+                    <span class="profile-role">CAB Member</span>
+                    <span class="state-badge state-LA">Louisiana</span>
+                </div>
+                <div class="card">
+                    <div class="profile-img">KL</div>
+                    <div class="profile-name">KiTani Lemieux</div>
+                    <span class="profile-role">CAB Member</span>
+                    <p class="profile-org">Xavier University of Louisiana</p>
+                    <span class="state-badge state-LA">Louisiana</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #045A7D; color: white; padding: 50px 0 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Forge AHEAD Center</h4>
+                    <p style="opacity: 0.9;">A regional health research center focused on improving health outcomes across the Deep South.</p>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Quick Links</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="index.html" style="color: white; opacity: 0.9; text-decoration: none;">Community Home</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="engagement-core.html" style="color: white; opacity: 0.9; text-decoration: none;">Engagement Core</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="cab.html" style="color: white; opacity: 0.9; text-decoration: none;">Advisory Board</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="coalition.html" style="color: white; opacity: 0.9; text-decoration: none;">Coalition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Programs</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;"><a href="micro-grants.html" style="color: white; opacity: 0.9; text-decoration: none;">Micro-Grants</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="resources.html" style="color: white; opacity: 0.9; text-decoration: none;">Resources</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="contact.html" style="color: white; opacity: 0.9; text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1rem;">Contact</h4>
+                    <p style="opacity: 0.9; font-size: 0.9rem;">Forge AHEAD Center<br>University of Alabama at Birmingham</p>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1.5rem; text-align: center; opacity: 0.8; font-size: 0.9rem;">
+                © 2026 Forge AHEAD Center. All rights reserved.
+            </div>
+        </div>
+    </footer>
+<script>
+function toggleNav() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+</body>
+</html>

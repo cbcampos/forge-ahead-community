@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .site-header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
+        .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; max-width: 1400px; margin: 0 auto; }
+        .site-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+        .site-logo img { height: 36px; }
+        .site-logo span { font-size: 1rem; font-weight: 700; color: #045A7D; }
+        .site-nav { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
+        .site-nav a { color: #333; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 6px 8px; display: block; }
+        .site-nav a:hover, .site-nav a.active { color: #045A7D; }
+        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px 10px; line-height: 1; }
+        @media (max-width: 900px) {
+            .menu-toggle { display: block; }
+            .site-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+            .site-nav.open { display: flex; }
+            .site-nav li { border-bottom: 1px solid #eee; }
+            .site-nav a { padding: 12px 15px; font-size: 0.9rem; }
+            .site-header .container { flex-wrap: wrap; }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Resources – Forge AHEAD Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    
+<body>
+    <header class="site-header" style="position: relative;">
+        <div class="container">
+            <a href="https://www.forgeaheadcenter.com" class="site-logo" target="_blank">
+                <img src="images/forge-logo.svg" alt="Forge AHEAD Center">
+                <span>Forge AHEAD</span>
+            </a>
+            <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+            <ul class="site-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="engagement-core.html">Engagement</a></li>
+                <li><a href="cab.html">Advisory Board</a></li>
+                <li><a href="coalition.html">Coalition</a></li>
+                <li><a href="micro-grants.html">Grants</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--
+    <!-- Header -->
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Community Resources</h1>
+            <p>Health education materials, tools, and information for communities across the Deep South</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Community</a> <span>›</span> Community Resources
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 50px;">
+                <div>
+                    <h2>Empowering Communities with Knowledge</h2>
+                    <p>Forge AHEAD Center is committed to sharing research-based health information with communities across Alabama, Mississippi, and Louisiana.</p>
+                    <p>Our community resources are developed in partnership with community members and are designed to be accessible, culturally relevant, and practical for everyday use.</p>
+                </div>
+                <div class="card">
+                    <h3>Looking for Something Specific?</h3>
+                    <p>Can't find what you're looking for? Our team can help connect you with resources tailored to your community's needs.</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Topics -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Health Topics</h2>
+                <p>Explore resources on conditions affecting the Deep South</p>
+            </div>
+            <div class="grid-3">
+                <div class="resource-card">
+                    <h4>Diabetes</h4>
+                    <p>Learn about diabetes prevention, management, and living well with diabetes. Includes educational materials, self-care guides, and local resources.</p>
+                    <a href="#" class="resource-link">View Resources →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Obesity</h4>
+                    <p>Information on healthy weight management, nutrition, physical activity, and community programs supporting healthy lifestyles.</p>
+                    <a href="#" class="resource-link">View Resources →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Hypertension</h4>
+                    <p>Resources for understanding and managing high blood pressure, including blood pressure monitoring tips and heart-healthy living guides.</p>
+                    <a href="#" class="resource-link">View Resources →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Heart Health</h4>
+                    <p>Cardiovascular health resources covering heart disease prevention, warning signs, and lifestyle changes for a healthier heart.</p>
+                    <a href="#" class="resource-link">View Resources →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Nutrition</h4>
+                    <p>Healthy eating resources, recipes, shopping guides, and tips for making nutritious food choices on any budget.</p>
+                    <a href="#" class="resource-link">View Resources →</a>
+                </div>
+                <div class="resource-card">
+                    <h4>Physical Activity</h4>
+                    <p>Ideas for staying active at any fitness level, including community exercise programs and home-based activity guides.</p>
+                    <a href="#" class="resource-link">View Resources →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Programs -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Programs</h2>
+                <p>Programs and initiatives across the Deep South</p>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Alabama Programs</h3>
+                    <ul class="feature-list">
+                        <li>Community health worker programs</li>
+                        <li>Diabetes prevention programs (DPP)</li>
+                        <li>Faith-based health ministries</li>
+                        <li>Chronic disease self-management workshops</li>
+                        <li>Food insecurity and nutrition initiatives</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Mississippi Programs</h3>
+                    <ul class="feature-list">
+                        <li>Mississippi SHINE Project</li>
+                        <li>Community health worker networks</li>
+                        <li>Rural health outreach programs</li>
+                        <li>Diabetes education programs</li>
+                        <li>Health screening initiatives</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Louisiana Programs</h3>
+                    <ul class="feature-list">
+                        <li>Community health initiatives</li>
+                        <li>Faith-based wellness programs</li>
+                        <li>Chronic disease management programs</li>
+                        <li>Nutrition and fitness programs</li>
+                        <li>Healthcare access programs</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Regional Programs</h3>
+                    <ul class="feature-list">
+                        <li>Telehealth access programs</li>
+                        <li>Health insurance enrollment assistance</li>
+                        <li>Medication assistance programs</li>
+                        <li>Transportation to healthcare</li>
+                        <li>Social services referrals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Organizations -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Partner Organizations</h2>
+                <p>Connect with our community partners</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Healthcare Systems</h3>
+                    <p>Hospitals, health clinics, and healthcare providers serving communities across Alabama, Mississippi, and Louisiana.</p>
+                    <a href="https://www.forgeaheadcenter.com/people-partners/" target="_blank" class="btn btn-outline">View Partners →</a>
+                </div>
+                <div class="card">
+                    <h3>Public Health</h3>
+                    <p>State and county health departments working to protect and improve community health.</p>
+                    <a href="#" class="btn btn-outline">Find Health Dept →</a>
+                </div>
+                <div class="card">
+                    <h3>Community Organizations</h3>
+                    <p>Nonprofits and community groups addressing health and social needs in local communities.</p>
+                    <a href="contact.html" class="btn btn-outline">Get Connected →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Findings -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2" style="gap: 50px;">
+                <div>
+                    <h2>Research for Communities</h2>
+                    <p>We believe research should benefit the communities that make it possible. Our community-facing research summaries translate complex findings into practical information.</p>
+                    
+                    <h4 style="margin-top: 25px;">What We Share</h4>
+                    <ul class="feature-list">
+                        <li>Plain-language summaries of research findings</li>
+                        <li>Infographics and visual guides</li>
+                        <li>Community-friendly presentations</li>
+                        <li>Research highlights from our pilot projects</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="quote-box">
+                        <p>"Community involvement improves the relevance and usefulness of research. That collaboration increases uptake and leads to lasting improvements."</p>
+                        <cite>— Forge AHEAD Center</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Materials -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Available Materials</h2>
+                <p>Downloadable and printable resources</p>
+            </div>
+            <div class="grid-4">
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">📋</div>
+                    <h4>Fact Sheets</h4>
+                    <p style="font-size: 0.9rem; color: var(--gray);">One-page summaries on key health topics</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">📊</div>
+                    <h4>Infographics</h4>
+                    <p style="font-size: 0.9rem; color: var(--gray);">Visual guides for health information</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">📖</div>
+                    <h4>Guides</h4>
+                    <p style="font-size: 0.9rem; color: var(--gray);">Detailed self-care and management guides</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <div style="font-size: 2.5rem; margin-bottom: 15px;">🎬</div>
+                    <h4>Videos</h4>
+                    <p style="font-size: 0.9rem; color: var(--gray);">Educational videos and presentations</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <p>Interested in receiving printed materials for your organization or community event?</p>
+                <a href="contact.html" class="btn btn-primary">Request Materials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="card" style="text-align: center; background: linear-gradient(135deg, var(--deep-south-blue) 0%, #5DA0BC 100%); color: white;">
+                <h2 style="color: white;">Need Help Finding Resources?</h2>
+                <p style="font-size: 1.1rem; opacity: 0.95; max-width: 600px; margin: 0 auto 25px;">Our Community Engagement team can help connect you with the resources and programs that best meet your needs.</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                    <a href="micro-grants.html" class="btn" style="background: white; color: var(--deep-south-blue);">Learn About Micro-Grants</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Forge AHEAD Center</h4>
+                    <p>A regional health research center focused on improving health outcomes and expanding access to effective care across the Deep South.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Community Home</a></li>
+                        <li><a href="engagement-core.html">Engagement Core</a></li>
+                        <li><a href="cab.html">Advisory Board</a></li>
+                        <li><a href="coalition.html">Coalition</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="micro-grants.html">Micro-Grants</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Main Site</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://www.forgeaheadcenter.com">Home</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/about/">About</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/people-partners/">People & Partners</a></li>
+                        <li><a href="https://www.forgeaheadcenter.com/research/">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Forge AHEAD Center. All rights reserved. Working to eliminate health disparities in the Deep South.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
