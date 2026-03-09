@@ -3,115 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forging Community – Forge AHEAD Center</title>
+    <title>Forging Community - Forge AHEAD Center</title>
+    <meta name="description" content="Partner-driven projects, resources, and community pathways to improve cardiometabolic health across Alabama, Mississippi, and Louisiana.">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .site-header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; max-width: 1400px; margin: 0 auto; }
-        .site-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
-        .site-logo img { height: 36px; }
-        .site-logo span { font-size: 1rem; font-weight: 700; color: #045A7D; }
-        
-        .site-nav { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
-        .site-nav a { color: #333; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 6px 8px; display: block; }
-        .site-nav a:hover, .site-nav a.active { color: #045A7D; }
-        
-        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px 10px; line-height: 1; }
-        
-        /* Mobile styles */
-        @media (max-width: 900px) {
-            .menu-toggle { display: block; }
-            .site-nav { 
-                display: none; 
-                position: absolute; 
-                top: 100%; 
-                left: 0; 
-                right: 0; 
-                background: #fff; 
-                flex-direction: column; 
-                padding: 0; 
-                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            }
-            .site-nav.open { display: flex; }
-            .site-nav li { border-bottom: 1px solid #eee; }
-            .site-nav a { padding: 12px 15px; font-size: 0.9rem; }
-            .site-header .container { flex-wrap: wrap; }
-        }
-    </style>
 </head>
 <body>
-    <header class="site-header" style="position: relative;">
+    <div class="site-topbar">
         <div class="container">
-            <a href="https://www.forgeaheadcenter.com" class="site-logo" target="_blank">
-                <img src="images/forge-logo.svg" alt="Forge AHEAD Center">
-                <span>Forge AHEAD</span>
+            <div>You are viewing the Forging Community website.</div>
+            <a href="https://forgeaheadcenter.com" target="_blank" rel="noreferrer">Back to Forge AHEAD home</a>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-logo" href="index.html">
+                <img src="images/forge-logo.svg" alt="Forge AHEAD Center logo">
+                <div class="site-logo-mark">
+                    <strong>Forge AHEAD</strong>
+                    <span>Forging Community</span>
+                </div>
             </a>
-            <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
-            <ul class="site-nav">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="engagement-core.html">Engagement</a></li>
-                <li><a href="cab.html">Advisory Board</a></li>
-                <li><a href="coalition.html">Coalition</a></li>
-                <li><a href="micro-grants.html">Grants</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+            <div class="nav-wrap" data-nav-wrap>
+                <nav aria-label="Primary">
+                    <ul class="site-nav">
+                        <li><a class="active" href="index.html">Overview</a></li>
+                        <li><a href="engagement-core.html">About Us</a></li>
+                        <li><a href="cab.html">Community Advisory Board</a></li>
+                        <li><a href="coalition.html">Partners</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="news.html">News &amp; Updates</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Forging Community</h1>
-            <p>Partnering with communities to improve cardiometabolic health across the Deep South.</p>
-            <a href="contact.html" class="btn btn-secondary">Get Involved</a>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Our Mission</h3>
-                    <p>To improve health outcomes by partnering with communities to reduce the impact of diabetes, obesity, and hypertension through research, training, outreach, and programs.</p>
+    <main>
+        <section class="hero-shell">
+            <div class="container">
+                <div class="notice-card">A fuller community prototype built from the existing framework, planning docs, and the current Forge AHEAD visual language.</div>
+                <div class="hero-layout">
+                    <div class="hero-copy">
+                        <span class="eyebrow">Forging Community</span>
+                        <h1>Partnering with communities to improve cardiometabolic health across the Deep South.</h1>
+                        <p>Forge AHEAD connects community leaders, researchers, clinicians, and local organizations so that outreach, research, and practical support reflect what people need where they live.</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+                            <a class="btn btn-ghost" href="projects.html">Explore Projects</a>
+                        </div>
+                        <div class="hero-summary">
+                            <div class="hero-stat">
+                                <strong>3</strong>
+                                <span>states linked through one community network</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>CAB</strong>
+                                <span>community review built into research and planning</span>
+                            </div>
+                            <div class="hero-stat">
+                                <strong>Ongoing</strong>
+                                <span>resources, pilots, partnerships, and feedback loops</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-collage" aria-hidden="true">
+                        <div class="hero-tile tall dark">Community listening and design</div>
+                        <div class="hero-tile sky">Partner planning</div>
+                        <div class="hero-tile accent">Local implementation support</div>
+                        <div class="hero-tile tall">Resource sharing and translation</div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Our Vision</h3>
-                    <p>A Deep South where everyone — regardless of income or ZIP code — can access the information and care needed to live a healthy life.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="split">
+                    <article class="mission-card">
+                        <span class="eyebrow">Mission</span>
+                        <h3>Improve health outcomes through partnership, collaboration, and community leadership.</h3>
+                        <p>Forging Community centers local voice in the design and delivery of health-focused programs, practical tools, and research partnerships that address diabetes, obesity, and hypertension.</p>
+                    </article>
+                    <article class="mission-card">
+                        <span class="eyebrow">Vision</span>
+                        <h3>A Deep South where geography and income do not limit access to support.</h3>
+                        <p>We are building a connected regional model where communities can access information, trusted partners, and opportunities to shape the work that affects them.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section section-alt">
-        <div class="container">
-            <h2 style="text-align:center;margin-bottom:2rem;color:#045A7D;">Goals of Community Engagement</h2>
-            <div class="grid-3">
-                <div class="card"><h4>Build Partnerships</h4><p>Multi-sector partnerships across AL, MS, and LA.</p></div>
-                <div class="card"><h4>Facilitate Communication</h4><p>Two-way communication addressing local priorities.</p></div>
-                <div class="card"><h4>Translate Research</h4><p>Materials developed with community input.</p></div>
+        <section class="section section-muted">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">What Forge AHEAD Supports</span>
+                    <h2>Community pathways built for research, outreach, and implementation.</h2>
+                    <p class="lede">This prototype expands the original skeleton into a clearer experience that helps visitors understand the work, find resources, and choose a next step.</p>
+                </div>
+                <div class="card-grid three">
+                    <article class="card support-card">
+                        <span class="kicker">Community-engaged research</span>
+                        <h3>Projects shaped by lived experience</h3>
+                        <p>Research and pilot design are strengthened through CAB review, partner input, and plain-language explanations of how participation works.</p>
+                        <a class="feature-link" href="research-collaborations.html">Review collaboration pathway</a>
+                    </article>
+                    <article class="card support-card">
+                        <span class="kicker">Micro-grants</span>
+                        <h3>Local organizations leading practical solutions</h3>
+                        <p>The community micro-grant model supports neighborhood-rooted approaches, technical assistance, and shared learning across the region.</p>
+                        <a class="feature-link" href="micro-grants.html">See program details</a>
+                    </article>
+                    <article class="card support-card">
+                        <span class="kicker">Regional collaboration</span>
+                        <h3>Partners, resources, and communication loops</h3>
+                        <p>Coalition partners, project teams, and community members stay connected through resources, events, and clear ways to share feedback.</p>
+                        <a class="feature-link" href="coalition.html">Meet our partners</a>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section">
-        <div class="container">
-            <h2 style="text-align:center;margin-bottom:2rem;color:#045A7D;">Explore Our Programs</h2>
-            <div class="grid-3">
-                <a href="cab.html" class="card" style="text-decoration:none"><h4>Community Advisory Board</h4><p>Meet our community leaders</p></a>
-                <a href="coalition.html" class="card" style="text-decoration:none"><h4>Community Coalition</h4><p>Partner organizations</p></a>
-                <a href="micro-grants.html" class="card" style="text-decoration:none"><h4>Micro-Grant Program</h4><p>Funding for health initiatives</p></a>
+        <section class="section">
+            <div class="container">
+                <div class="highlight-panel">
+                    <div class="card">
+                        <span class="eyebrow">Community Overview</span>
+                        <h2>How the site is organized</h2>
+                        <p>This build-out introduces the broader structure outlined in the planning documents: a stronger landing page, a clearer CAB and partner story, dedicated project and micro-grant content, a resources hub, news, accessibility, privacy, and participation pages.</p>
+                        <div class="state-pills">
+                            <span class="state-pill">Community Advisory Board</span>
+                            <span class="state-pill">Coalition &amp; Partners</span>
+                            <span class="state-pill">Projects</span>
+                            <span class="state-pill">Resources</span>
+                            <span class="state-pill">News &amp; Updates</span>
+                            <span class="state-pill">Get Involved</span>
+                        </div>
+                    </div>
+                    <aside class="quote-card">
+                        <span class="eyebrow">Community Voice</span>
+                        <blockquote>"Local insight should shape what gets built, how it is explained, and how success is defined."</blockquote>
+                        <strong>Featured CAB theme for the home page</strong>
+                        <a class="btn btn-primary" href="cab.html">Meet the CAB</a>
+                    </aside>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer style="background:#045A7D;color:white;padding:40px 0 20px;">
-        <div class="container">
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-bottom:2rem;">
-                <div><h4 style="color:white;margin-bottom:1rem;">Forge AHEAD Center</h4><p style="opacity:0.9;font-size:0.9rem;">A regional health research center focused on improving health outcomes across the Deep South.</p></div>
-                <div><h4 style="color:white;margin-bottom:1rem;">Quick Links</h4><ul style="list-style:none;padding:0;margin:0;"><li style="margin-bottom:0.5rem"><a href="index.html" style="color:white;opacity:0.9;text-decoration:none">Home</a></li><li style="margin-bottom:0.5rem"><a href="cab.html" style="color:white;opacity:0.9;text-decoration:none">Advisory Board</a></li><li style="margin-bottom:0.5rem"><a href="contact.html" style="color:white;opacity:0.9;text-decoration:none">Contact</a></li></ul></div>
+        <section class="section section-deep">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Featured Entry Points</span>
+                    <h2>Start with the pathway that fits your role.</h2>
+                </div>
+                <div class="card-grid three">
+                    <article class="directory-card">
+                        <div class="directory-meta">
+                            <div>
+                                <h3>Community members and advocates</h3>
+                                <p>Find ways to volunteer, participate in studies, join events, or share ideas with the Community Engagement team.</p>
+                            </div>
+                            <div class="avatar">CM</div>
+                        </div>
+                        <a class="btn btn-secondary" href="get-involved.html">Ways to participate</a>
+                    </article>
+                    <article class="directory-card">
+                        <div class="directory-meta">
+                            <div>
+                                <h3>Organizations and partner groups</h3>
+                                <p>See how coalition relationships work, what partnership expectations look like, and how community-based organizations connect to the work.</p>
+                            </div>
+                            <div class="avatar orange">CP</div>
+                        </div>
+                        <a class="btn btn-secondary" href="coalition.html">Partner with us</a>
+                    </article>
+                    <article class="directory-card">
+                        <div class="directory-meta">
+                            <div>
+                                <h3>Researchers and collaborators</h3>
+                                <p>Review CAB submission steps, project review criteria, and the community-facing expectations for future collaboration.</p>
+                            </div>
+                            <div class="avatar">RC</div>
+                        </div>
+                        <a class="btn btn-secondary" href="research-collaborations.html">Collaboration process</a>
+                    </article>
+                </div>
             </div>
-            <div style="border-top:1px solid rgba(255,255,255,0.2);padding-top:1rem;text-align:center;opacity:0.8;font-size:0.9rem;">© 2026 Forge AHEAD Center</div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Featured Pages</span>
+                    <h2>Representative inner pages are built so you can translate the system, not invent it.</h2>
+                </div>
+                <div class="card-grid four">
+                    <article class="directory-card">
+                        <h3>Sample Project</h3>
+                        <p>A full project detail page showing how to structure participation, partners, and outcomes.</p>
+                        <a class="feature-link" href="project-silc.html">Open project page</a>
+                    </article>
+                    <article class="directory-card">
+                        <h3>Impact Reports</h3>
+                        <p>A printable-brief archive model for community-facing project results.</p>
+                        <a class="feature-link" href="impact-reports.html">Open reports</a>
+                    </article>
+                    <article class="directory-card">
+                        <h3>Partner Spotlight</h3>
+                        <p>A sample partner profile that can scale into a coalition directory later.</p>
+                        <a class="feature-link" href="partner-spotlight.html">Open spotlight</a>
+                    </article>
+                    <article class="directory-card">
+                        <h3>Feedback Page</h3>
+                        <p>A dedicated place for comments, testimonials, and future "You said / We did" updates.</p>
+                        <a class="feature-link" href="feedback.html">Open feedback page</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Stay Connected</span>
+                    <h2>Built for growth as assets, stories, and forms are finalized.</h2>
+                    <p class="lede">The structure below makes room for launch content now and more detailed assets later, including partner profiles, downloadable briefs, events, and community news.</p>
+                </div>
+                <div class="split">
+                    <div class="form-shell">
+                        <h3>Newsletter and interest capture</h3>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="home-name">Name</label>
+                                <input id="home-name" type="text" placeholder="Your name">
+                            </div>
+                            <div class="field">
+                                <label for="home-email">Email</label>
+                                <input id="home-email" type="email" placeholder="name@example.org">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="home-interest">What are you interested in?</label>
+                            <select id="home-interest">
+                                <option>Community updates</option>
+                                <option>Partner opportunities</option>
+                                <option>Research participation</option>
+                                <option>Resources and trainings</option>
+                            </select>
+                        </div>
+                        <p class="fine-print">Static prototype only. Form wiring would be added in WordPress or your CRM.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Next content priorities</h3>
+                        <ul class="list-clean">
+                            <li>Replace abstract hero tiles with approved community photography.</li>
+                            <li>Publish CAB quote, member portraits, and meeting archive files.</li>
+                            <li>Add partner directory data, micro-grant awardee names, and featured project assets.</li>
+                            <li>Connect real forms, consent language, accessibility contacts, and privacy copy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Forge AHEAD Center</h3>
+                    <p>Forging Community is the community-facing section of Forge AHEAD, focused on partnership, practical support, and shared decision-making across Alabama, Mississippi, and Louisiana.</p>
+                </div>
+                <div>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="engagement-core.html">About Us</a></li>
+                        <li><a href="cab.html">Community Advisory Board</a></li>
+                        <li><a href="coalition.html">Coalition &amp; Partners</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Resource Library</a></li>
+                        <li><a href="news.html">News &amp; Updates</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="privacy.html">Privacy &amp; Data</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="research-collaborations.html">Research Collaborations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://forgeaheadcenter.com" target="_blank" rel="noreferrer">Main Forge AHEAD site</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-current-year></span> Forge AHEAD Center</span>
+                <span>Prototype community site structure for content build-out and WordPress import.</span>
+            </div>
         </div>
     </footer>
+    <script src="js/site.js"></script>
 </body>
 </html>

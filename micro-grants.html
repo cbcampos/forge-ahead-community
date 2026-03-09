@@ -1,335 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .site-header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-        .site-header .container { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; max-width: 1400px; margin: 0 auto; }
-        .site-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
-        .site-logo img { height: 36px; }
-        .site-logo span { font-size: 1rem; font-weight: 700; color: #045A7D; }
-        .site-nav { display: flex; gap: 12px; list-style: none; margin: 0; padding: 0; }
-        .site-nav a { color: #333; text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 6px 8px; display: block; }
-        .site-nav a:hover, .site-nav a.active { color: #045A7D; }
-        .menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; padding: 5px 10px; line-height: 1; }
-        @media (max-width: 900px) {
-            .menu-toggle { display: block; }
-            .site-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-            .site-nav.open { display: flex; }
-            .site-nav li { border-bottom: 1px solid #eee; }
-            .site-nav a { padding: 12px 15px; font-size: 0.9rem; }
-            .site-header .container { flex-wrap: wrap; }
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Micro-Grant Program – Forge AHEAD Center</title>
+    <title>Community Micro-Grants - Forge AHEAD Center</title>
+    <meta name="description" content="Explore the Forge AHEAD community micro-grant program, funding priorities, support model, and application readiness content.">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-    
 <body>
-    <header class="site-header" style="position: relative;">
+    <div class="site-topbar">
         <div class="container">
-            <a href="https://www.forgeaheadcenter.com" class="site-logo" target="_blank">
-                <img src="images/forge-logo.svg" alt="Forge AHEAD Center">
-                <span>Forge AHEAD</span>
+            <div>You are viewing the Forging Community website.</div>
+            <a href="https://forgeaheadcenter.com" target="_blank" rel="noreferrer">Back to Forge AHEAD home</a>
+        </div>
+    </div>
+    <header class="site-header">
+        <div class="container">
+            <a class="site-logo" href="index.html">
+                <img src="images/forge-logo.svg" alt="Forge AHEAD Center logo">
+                <div class="site-logo-mark">
+                    <strong>Forge AHEAD</strong>
+                    <span>Forging Community</span>
+                </div>
             </a>
-            <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
-            <ul class="site-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="engagement-core.html">Engagement</a></li>
-                <li><a href="cab.html">Advisory Board</a></li>
-                <li><a href="coalition.html">Coalition</a></li>
-                <li><a href="micro-grants.html">Grants</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+            <div class="nav-wrap" data-nav-wrap>
+                <nav aria-label="Primary">
+                    <ul class="site-nav">
+                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="engagement-core.html">About Us</a></li>
+                        <li><a href="cab.html">Community Advisory Board</a></li>
+                        <li><a href="coalition.html">Partners</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="news.html">News &amp; Updates</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cta">
+                    <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!--
-    <!-- Header -->
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-box">
+                    <span class="eyebrow">Community Micro-Grants</span>
+                    <h1>Supporting local organizations that are already doing trusted, community-rooted work.</h1>
+                    <p>This page shifts the original grant summary toward a clearer community-facing program page with funding priorities, support expectations, and room for awardee spotlights.</p>
+                </div>
+                <div class="breadcrumbs"><a href="index.html">Overview</a> / Community Micro-Grants</div>
+            </div>
+        </section>
 
-    <!-- Page Title -->
-    <section class="page-title">
-        <div class="container">
-            <h1>Community Micro-Grant Program</h1>
-            <p>Empowering local organizations to drive health improvements in their communities</p>
-        </div>
-    </section>
+        <section class="section">
+            <div class="container">
+                <div class="card-grid three">
+                    <article class="card"><span class="kicker">Purpose</span><h3>Invest in local solutions</h3><p>Micro-grants can help organizations test practical ideas that reflect local needs, culture, and trusted community relationships.</p></article>
+                    <article class="card"><span class="kicker">Support</span><h3>Pair funding with technical assistance</h3><p>The planning materials point to check-ins, peer learning, and structure that helps organizations move from idea to implementation.</p></article>
+                    <article class="card"><span class="kicker">Visibility</span><h3>Share what communities are building</h3><p>The site can spotlight awardees, lessons learned, and downloadable impact snapshots once launch assets are approved.</p></article>
+                </div>
+            </div>
+        </section>
 
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <a href="index.html">Community</a> <span>›</span> Community Micro-Grant Program
-        </div>
-    </section>
+        <section class="section section-muted">
+            <div class="container">
+                <div class="split">
+                    <article class="card">
+                        <span class="eyebrow">Funding Priorities</span>
+                        <h2>Examples of work this page is prepared to highlight</h2>
+                        <ul class="list-clean">
+                            <li>Community-led education and prevention efforts</li>
+                            <li>Programs that reduce barriers to healthy living</li>
+                            <li>Initiatives grounded in trust, culture, and local knowledge</li>
+                            <li>Projects that can share practical lessons back to the region</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <span class="eyebrow">Awardee Story Slots</span>
+                        <h2>Ready for real organization profiles</h2>
+                        <p>The existing skeleton referenced awardee organizations but did not give them a polished structure. This page now has a framework for logos, short descriptions, quotes, and impact highlights without overcommitting to content that is not final yet.</p>
+                        <div class="quote-stack" style="margin-top: 1rem;">
+                            <div class="quote-mini">
+                                <blockquote>"The structure gave us a way to move an idea into a community-facing program with real support behind it."</blockquote>
+                                <strong>Sample awardee quote</strong>
+                            </div>
+                            <div class="quote-mini">
+                                <blockquote>"A micro-grant can be small in dollars and still big in community trust, visibility, and momentum."</blockquote>
+                                <strong>Sample implementation lesson</strong>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <!-- Overview -->
-    <section class="section">
-        <div class="container">
-            <div class="grid-2" style="align-items: center; gap: 50px;">
-                <div>
-                    <h2>Empowering Communities with Targeted Support</h2>
-                    <p>The Deep South faces some of the highest rates of chronic disease in the country, and many local organizations are already leading efforts to improve community health.</p>
-                    <p>The Forge AHEAD Community Micro-Grant Program is designed to provide the financial resources and support these groups need to scale their efforts and drive lasting change.</p>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Application Journey</span>
+                    <h2>A clearer process for organizations exploring the program.</h2>
                 </div>
-                <div class="quote-box">
-                    <p>"This micro-grant program allows us to directly support organizations that are already working to improve the lives of their neighbors. By providing funding, resources, and ongoing support, we can help amplify their impact and create lasting change."</p>
-                    <cite>— Caroline Compretta, PhD, Community Engagement Core Lead</cite>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Program Priorities -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2>Funding Priorities</h2>
-                <p>What we look for in micro-grant applications</p>
-            </div>
-            <div class="grid-3">
-                <div class="feature-box">
-                    <div class="feature-box-icon">📖</div>
-                    <div class="feature-box-content">
-                        <h4>Health Education</h4>
-                        <p>Projects that increase knowledge about diabetes, obesity, hypertension, and related conditions.</p>
-                    </div>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-box-icon">🛡️</div>
-                    <div class="feature-box-content">
-                        <h4>Disease Prevention</h4>
-                        <p>Initiatives focused on preventing chronic disease before it starts through lifestyle interventions.</p>
-                    </div>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-box-icon">🏥</div>
-                    <div class="feature-box-content">
-                        <h4>Access to Care</h4>
-                        <p>Programs that connect underserved communities with healthcare services and resources.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Evaluation Criteria -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>How Projects Are Evaluated</h2>
-                <p>Criteria used to select funded projects</p>
-            </div>
-            <div class="grid-2">
-                <div class="card">
-                    <h3>Key Criteria</h3>
-                    <ul class="feature-list">
-                        <li><strong>Feasibility</strong> — Can the project be successfully implemented with available resources?</li>
-                        <li><strong>Innovation</strong> — Does the project bring fresh approaches to community health?</li>
-                        <li><strong>Collaboration</strong> — Does the project involve partnerships with other organizations?</li>
-                        <li><strong>Sustainability</strong> — Can the project continue after the funding period ends?</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Impact Focus</h3>
-                    <ul class="feature-list">
-                        <li><strong>Community Need</strong> — Does the project address a demonstrated community need?</li>
-                        <li><strong>Reach</strong> — How many people will benefit from the project?</li>
-                        <li><strong>Measurable Outcomes</strong> — Are there clear goals and ways to track progress?</li>
-                        <li><strong>Cultural Relevance</strong> — Does the project reflect the community it serves?</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support Structure -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2>Support for Grantees</h2>
-                <p>We're invested in your success</p>
-            </div>
-            <div class="grid-3">
-                <div class="card" style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 15px;">📅</div>
-                    <h3>Monthly Meetings</h3>
-                    <p>Regular check-ins with the Forge AHEAD team to discuss progress, share challenges, and celebrate successes.</p>
-                </div>
-                <div class="card" style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
-                    <h3>Mid-Year Review</h3>
-                    <p>A progress check-in at the halfway point to ensure projects are on track and make any needed adjustments.</p>
-                </div>
-                <div class="card" style="text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 15px;">📝</div>
-                    <h3>Impact Report</h3>
-                    <p>Guidance on documenting your project's outcomes and sharing your success story with the community.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Timeline -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Application Process</h2>
-                <p>Key dates and steps in the application timeline</p>
-            </div>
-            <div style="max-width: 800px; margin: 0 auto;">
                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">Step 1: Information Released</div>
-                        <div class="timeline-content">
-                            <h4>Call for Proposals</h4>
-                            <p>Program guidelines and application materials are made available to the public.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Step 2: Submit Application</div>
-                        <div class="timeline-content">
-                            <h4>Application Deadline</h4>
-                            <p>Complete applications must be submitted by the specified deadline.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Step 3: Review Process</div>
-                        <div class="timeline-content">
-                            <h4>Review & Selection</h4>
-                            <p>Applications are reviewed by the Community Advisory Board and Forge AHEAD team.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Step 4: Notifications</div>
-                        <div class="timeline-content">
-                            <h4>Award Notifications</h4>
-                            <p>Selected organizations are notified and awarded funding.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Step 5: Implementation</div>
-                        <div class="timeline-content">
-                            <h4>Project Period</h4>
-                            <p>12-month funding period with monthly support meetings and mid-year review.</p>
-                        </div>
-                    </div>
+                    <div class="timeline-step"><span>1</span><div><h3>Review fit</h3><p>Understand priorities, eligibility, and what kinds of local initiatives the micro-grant program is designed to support.</p></div></div>
+                    <div class="timeline-step"><span>2</span><div><h3>Prepare a short concept</h3><p>Describe the need, who benefits, and how the effort connects to practical community health outcomes.</p></div></div>
+                    <div class="timeline-step"><span>3</span><div><h3>Receive support</h3><p>Use meetings and technical assistance to refine implementation plans, reporting expectations, and learning opportunities.</p></div></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CAB Involvement -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="grid-2" style="align-items: center; gap: 50px;">
-                <div>
-                    <h2>Community-Led Guiding</h2>
-                    <p>One of the unique aspects of the micro-grant program is the involvement of the Forge AHEAD Community Advisory Board (CAB), which plays a critical role in guiding the center's initiatives and ensuring that its work is responsive to the real needs of the communities it serves.</p>
-                    <p>CAB members help review applications, provide feedback on project design, and ensure that funded projects align with community priorities.</p>
+        <section class="section section-deep">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Awardee Spotlight Framework</span>
+                    <h2>Three cards can introduce organizations before full profile pages exist.</h2>
                 </div>
-                <div class="quote-box">
-                    <p>"Our communities have the knowledge, passion, and solutions to tackle health challenges—we just need the resources to make it happen. This grant program is an incredible opportunity for local organizations to access funding and support that will help turn their ideas into action."</p>
-                    <cite>— CAB Member</cite>
+                <div class="card-grid three">
+                    <article class="directory-card">
+                        <h3>Community nutrition and food access</h3>
+                        <p>Space for an organization focused on healthy food access, local education, or practical skill-building.</p>
+                    </article>
+                    <article class="directory-card">
+                        <h3>Faith-rooted wellness support</h3>
+                        <p>Space for a community group using trusted local settings to host or share health-focused programs.</p>
+                    </article>
+                    <article class="directory-card">
+                        <h3>Neighborhood prevention initiative</h3>
+                        <p>Space for a local organization testing a culturally responsive outreach or prevention model.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Eligibility -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Eligibility</h2>
-                <p>Who can apply for a micro-grant</p>
-            </div>
-            <div class="card" style="max-width: 900px; margin: 0 auto;">
-                <div class="grid-2">
-                    <div>
-                        <h4>Eligible Organizations</h4>
-                        <ul class="feature-list">
-                            <li>501(c)(3) nonprofit organizations</li>
-                            <li>Faith-based organizations with community programs</li>
-                            <li>Community health organizations</li>
-                            <li>Local government agencies</li>
-                            <li>Tribal organizations</li>
-                            <li>Schools and educational institutions</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Geographic Focus</h4>
-                        <p>Projects must serve communities in one or more of our three-state partnership area:</p>
-                        <ul class="feature-list">
-                            <li>Alabama</li>
-                            <li>Mississippi</li>
-                            <li>Louisiana</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section">
-        <div class="container">
-            <div class="card" style="text-align: center; background: linear-gradient(135deg, var(--deep-south-blue) 0%, #5DA0BC 100%); color: white;">
-                <h2 style="color: white;">Ready to Apply?</h2>
-                <p style="font-size: 1.1rem; opacity: 0.95; max-width: 600px; margin: 0 auto 25px;">Have questions about the program or want to learn more before applying? We'd love to hear from you.</p>
-                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-                    <a href="resources.html" class="btn" style="background: white; color: var(--deep-south-blue);">View Resources</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <h4>Forge AHEAD Center</h4>
-                    <p>A regional health research center focused on improving health outcomes and expanding access to effective care across the Deep South.</p>
+                    <h3>Forge AHEAD Center</h3>
+                    <p>Forging Community is the community-facing section of Forge AHEAD, focused on partnership, practical support, and shared decision-making across Alabama, Mississippi, and Louisiana.</p>
                 </div>
                 <div>
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Community Home</a></li>
-                        <li><a href="engagement-core.html">Engagement Core</a></li>
-                        <li><a href="cab.html">Advisory Board</a></li>
-                        <li><a href="coalition.html">Coalition</a></li>
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="engagement-core.html">About Us</a></li>
+                        <li><a href="cab.html">Community Advisory Board</a></li>
+                        <li><a href="coalition.html">Coalition &amp; Partners</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Programs</h4>
-                    <ul class="footer-links">
-                        <li><a href="micro-grants.html">Micro-Grants</a></li>
-                        <li><a href="resources.html">Resources</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Resource Library</a></li>
+                        <li><a href="news.html">News &amp; Updates</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="privacy.html">Privacy &amp; Data</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4>Main Site</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://www.forgeaheadcenter.com">Home</a></li>
-                        <li><a href="https://www.forgeaheadcenter.com/about/">About</a></li>
-                        <li><a href="https://www.forgeaheadcenter.com/people-partners/">People & Partners</a></li>
-                        <li><a href="https://www.forgeaheadcenter.com/research/">Research</a></li>
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="research-collaborations.html">Research Collaborations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://forgeaheadcenter.com" target="_blank" rel="noreferrer">Main Forge AHEAD site</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 Forge AHEAD Center. All rights reserved. Working to eliminate health disparities in the Deep South.</p>
+                <span>&copy; <span data-current-year></span> Forge AHEAD Center</span>
+                <span>Prototype community site structure for content build-out and WordPress import.</span>
             </div>
         </div>
     </footer>
-
-    <script>
-        function toggleNav() {
-            document.getElementById('navMenu').classList.toggle('active');
-        }
-    </script>
+    <script src="js/site.js"></script>
 </body>
 </html>
