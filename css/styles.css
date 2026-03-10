@@ -675,9 +675,10 @@ ol {
     background: linear-gradient(145deg, rgba(223, 136, 62, 0.96) 0%, rgba(193, 108, 43, 0.98) 100%);
 }
 
-.member-photo {
+.directory-card .member-photo {
     width: 104px;
     height: 104px;
+    aspect-ratio: 1 / 1;
     border-radius: 999px;
     object-fit: cover;
     box-shadow: var(--shadow-sm);
